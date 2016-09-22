@@ -22,7 +22,7 @@
 
     <br/><br/>
     How many big bars of chocolate do you have?
-    <input type="text" placeholder="Number of bigs" ng-model="inputNumBigs" ng-bind="inputNumBigs"/>
+    <input type="text" placeholder="Number of bigs" ng-model="inputNumBigs"/>
     <br/>
     How many small bars of chocolate do you have?
     <input type="text" placeholder="Number of smalls" ng-model="inputNumSmalls"/>
@@ -36,16 +36,16 @@
     <br/><br/>
 
     <h3>Your Inventory:</h3>
-    <span ng-if="mySolution.bigs != -1">
-        <div ng-repeat="chocIndex in makeArray(inputNumBigs - mySolution.bigs)">
-            <div class="choc-big-bar">{{chocIndex + 1}}</div>
-        </div>
+    <!--<span ng-if="mySolution.bigs != -1">-->
+        <!--<div ng-repeat="chocIndex in makeArray(inputNumBigs - mySolution.bigs)">-->
+            <!--<div class="choc-big-bar">{{chocIndex + 1}}</div>-->
+        <!--</div>-->
 
-        <div ng-repeat="chocIndex in makeArray(inputNumSmalls - mySolution.smalls)">
-            <div class="choc-small-bar">{{chocIndex + 1}}</div>
-        </div>
-    </span>
-    <span ng-if="mySolution.bigs == -1">
+        <!--<div ng-repeat="chocIndex in makeArray(inputNumSmalls - mySolution.smalls)">-->
+            <!--<div class="choc-small-bar">{{chocIndex + 1}}</div>-->
+        <!--</div>-->
+    <!--</span>-->
+    <!--<span ng-if="mySolution.bigs == -1">-->
         <div ng-repeat="chocIndex in makeArray(inputNumBigs)">
             <div class="choc-big-bar">{{chocIndex + 1}}</div>
         </div>
@@ -53,7 +53,7 @@
         <div ng-repeat="chocIndex in makeArray(inputNumSmalls)">
             <div class="choc-small-bar">{{chocIndex + 1}}</div>
         </div>
-    </span>
+    <!--</span>-->
     <br/><br/><br/><br/><br/><br/>
 
     <span ng-if="mySolution.hasSolution">
