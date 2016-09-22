@@ -1,0 +1,23 @@
+.choc-big-bar {
+    float: left;
+    width: 50px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 40px;
+    text-align: center;
+    background-color: orangered;
+    color: white;
+    margin: 5px;
+}
+
+.choc-small-bar {
+    float: left;
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    text-align: center;
+    background-color: orange;
+    color: white;
+    margin: 2px;
+}
