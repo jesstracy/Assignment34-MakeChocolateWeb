@@ -4,62 +4,6 @@ package com.tiy;
  * Created by jessicatracy on 9/22/16.
  */
 public class ChocolateSolver {
-//    int numBig;
-//    int numSmall;
-//    int goal;
-
-//    int[] solution = new int[2];
-//    boolean hasSolution;
-
-
-//    public ChocolateSolver() {
-//    }
-//
-//    public ChocolateSolver(int numBig, int numSmall, int goal) {
-//        this.numBig = numBig;
-//        this.numSmall = numSmall;
-//        this.goal = goal;
-//    }
-//
-//    public int getNumBig() {
-//        return numBig;
-//    }
-//
-//    public void setNumBig(int numBig) {
-//        this.numBig = numBig;
-//    }
-//
-//    public int getNumSmall() {
-//        return numSmall;
-//    }
-//
-//    public void setNumSmall(int numSmall) {
-//        this.numSmall = numSmall;
-//    }
-//
-//    public int getGoal() {
-//        return goal;
-//    }
-//
-//    public void setGoal(int goal) {
-//        this.goal = goal;
-//    }
-//
-//    public int[] getSolution() {
-//        return solution;
-//    }
-//
-//    public void setSolution(int[] solution) {
-//        this.solution = solution;
-//    }
-//
-//    public boolean isHasSolution() {
-//        return hasSolution;
-//    }
-//
-//    public void setHasSolution(boolean hasSolution) {
-//        this.hasSolution = hasSolution;
-//    }
 
     public ChocolateSolution makeChocolate(int big, int small, int goal) {
 

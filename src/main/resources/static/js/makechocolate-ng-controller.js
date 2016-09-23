@@ -21,15 +21,19 @@ angular.module('MakeChocolateAngularApp', [])
                         $scope.mySolution = response.data;
                         if ($scope.mySolution.hasSolution == false) {
                             $scope.showNoSolution = true;
-//                            $scope.mySolutionBigsAdapted = 0;
-//                            $scope.mySolutionSmallsAdapted = 0;
                         } else {
                             $scope.showNoSolution = false;
-//                            $scope.mySolutionBigsAdapted = $scope.mySolution.bigs;
-//                            $scope.mySolutionSmallsAdapted = $scope.mySolution.smalls;
+//                            for (var counter = 1; counter < $scope.mySolution.bigs; counter++) {
+//                                $scope.inputNumBigs = $scope.inputNumBigs - counter;
+//                                if (counter < $scope.mySolution.smalls) {
+//                                    $scope.inputNumSmalls = $scope.inputNumSmalls - counter;
+//                                }
+//                                $timeout(animate(), 800);
+//                            }
                             $scope.inputNumBigs = $scope.inputNumBigs - $scope.mySolution.bigs;
                             $scope.inputNumSmalls = $scope.inputNumSmalls - $scope.mySolution.smalls;
-                            }
+
+                        }
                     },
                     function errorCallback(response) {
                         console.log("Unable to get data");
@@ -46,9 +50,8 @@ angular.module('MakeChocolateAngularApp', [])
 //            }
 //        }
 
-//        $scope.animate = function() {
+//        var animate = function() {
 //            console.log("animate is running!");
-//            if ($scope.inputNumBigs )
 //        }
 
         $scope.factoryName = "**The Chocolate Factory**";

@@ -63,10 +63,6 @@ public class ChocolateSolverTest {
 
     @Test
     public void enoughBigsEnoughSmalls2() throws Exception {
-//        int[] smallBigArray = solver.makeChocolate(9, 3, 19);
-//        assertEquals(4, smallBigArray[0]);
-//        assertEquals(3, smallBigArray[1]);
-
         solution = solver.makeChocolate(9, 3, 19);
         assertEquals(4, solution.smalls);
         assertEquals(3, solution.bigs);
@@ -75,10 +71,6 @@ public class ChocolateSolverTest {
 
     @Test
     public void negativeBigs2() throws Exception {
-//        int[] smallBigArray = solver.makeChocolate(2, -5, 25);
-//        assertEquals(-1, smallBigArray[0]);
-//        assertEquals(-1, smallBigArray[1]);
-
         solution = solver.makeChocolate(2, -5, 25);
         assertEquals(-1, solution.smalls);
         assertEquals(-1, solution.bigs);
@@ -87,10 +79,6 @@ public class ChocolateSolverTest {
 
     @Test
     public void negativeSmalls2() throws Exception {
-//        int[] smallBigArray = solver.makeChocolate(-3, 1, 8);
-//        assertEquals(-1, smallBigArray[0]);
-//        assertEquals(-1, smallBigArray[1]);
-
         solution = solver.makeChocolate(-3, 1, 8);
         assertEquals(-1, solution.smalls);
         assertEquals(-1, solution.bigs);
@@ -99,10 +87,6 @@ public class ChocolateSolverTest {
 
     @Test
     public void negativeSmallsWithLargeNumberBigs2() throws Exception {
-//        int[] smallBigArray = solver.makeChocolate(-3, 51, 8);
-//        assertEquals(-1, smallBigArray[0]);
-//        assertEquals(-1, smallBigArray[1]);
-
         solution = solver.makeChocolate(-3, 51, 8);
         assertEquals(-1, solution.smalls);
         assertEquals(-1, solution.bigs);
@@ -111,10 +95,6 @@ public class ChocolateSolverTest {
 
     @Test
     public void moreBigsThanNeededPossible2() throws Exception {
-//        int[] smallBigArray = solver.makeChocolate(3, 4, 12);
-//        assertEquals(2, smallBigArray[0]);
-//        assertEquals(2, smallBigArray[1]);
-
         solution = solver.makeChocolate(3, 4, 12);
         assertEquals(2, solution.smalls);
         assertEquals(2, solution.bigs);
@@ -123,10 +103,6 @@ public class ChocolateSolverTest {
 
     @Test
     public void moreBigsThanNeededNotPossible2() throws Exception {
-//        int[] smallBigArray = solver.makeChocolate(2, 6, 18);
-//        assertEquals(-1, smallBigArray[0]);
-//        assertEquals(-1, smallBigArray[1]);
-
         solution = solver.makeChocolate(2, 6, 18);
         assertEquals(-1, solution.smalls);
         assertEquals(-1, solution.bigs);
@@ -135,10 +111,6 @@ public class ChocolateSolverTest {
 
     @Test
     public void enoughSmallsNotEnoughBigsButNotZero2() throws Exception {
-//        int[] smallBigArray = solver.makeChocolate(30, 1, 11);
-//        assertEquals(6, smallBigArray[0]);
-//        assertEquals(1, smallBigArray[1]);
-
         solution = solver.makeChocolate(30, 1, 11);
         assertEquals(6, solution.smalls);
         assertEquals(1, solution.bigs);
@@ -147,10 +119,6 @@ public class ChocolateSolverTest {
 
     @Test
     public void sameAmountOfSmallsAsBigs2() throws Exception {
-//        int[] smallBigArray = solver.makeChocolate(15, 3, 15);
-//        assertEquals(0, smallBigArray[0]);
-//        assertEquals(3, smallBigArray[1]);
-
         solution = solver.makeChocolate(15, 3, 15);
         assertEquals(0, solution.smalls);
         assertEquals(3, solution.bigs);
@@ -159,10 +127,6 @@ public class ChocolateSolverTest {
 
     @Test
     public void moreSmallsAndBigsThanGoal2() throws Exception {
-//        int[] smallBigArray = solver.makeChocolate(7, 2, 1);
-//        assertEquals(1, smallBigArray[0]);
-//        assertEquals(0, smallBigArray[1]);
-
         solution = solver.makeChocolate(7, 2, 1);
         assertEquals(1, solution.smalls);
         assertEquals(0, solution.bigs);
@@ -171,10 +135,6 @@ public class ChocolateSolverTest {
 
     @Test
     public void goalZeroEnoughBigsEnoughSmalls2() throws Exception {
-//        int[] smallBigArray = solver.makeChocolate(7, 2, 0);
-//        assertEquals(0, smallBigArray[0]);
-//        assertEquals(0, smallBigArray[1]);
-
         solution = solver.makeChocolate(7, 2, 0);
         assertEquals(0, solution.smalls);
         assertEquals(0, solution.bigs);
@@ -183,10 +143,6 @@ public class ChocolateSolverTest {
 
     @Test
     public void notEnoughSmallsNotEnoughBigs2() throws Exception {
-//        int[] smallBigArray = solver.makeChocolate(17, 3, 100);
-//        assertEquals(-1, smallBigArray[0]);
-//        assertEquals(-1, smallBigArray[1]);
-
         solution = solver.makeChocolate(17, 3, 100);
         assertEquals(-1, solution.smalls);
         assertEquals(-1, solution.bigs);
@@ -195,10 +151,6 @@ public class ChocolateSolverTest {
 
     @Test
     public void lotsOfSmallsButCanBeDoneWithBigs2() throws Exception {
-//        int[] smallBigArray = solver.makeChocolate(100, 20, 100);
-//        assertEquals(0, smallBigArray[0]);
-//        assertEquals(20, smallBigArray[1]);
-
         solution = solver.makeChocolate(100, 20, 100);
         assertEquals(0, solution.smalls);
         assertEquals(20, solution.bigs);
@@ -207,10 +159,6 @@ public class ChocolateSolverTest {
 //
     @Test
     public void lotsOfSmallsCantBeDoneWithOnlyBigs2() throws Exception {
-//        int[] smallBigArray = solver.makeChocolate(75, 2, 70);
-//        assertEquals(60, smallBigArray[0]);
-//        assertEquals(2, smallBigArray[1]);
-
         solution = solver.makeChocolate(75, 2, 70);
         assertEquals(60, solution.smalls);
         assertEquals(2, solution.bigs);
@@ -219,10 +167,6 @@ public class ChocolateSolverTest {
 
     @Test
     public void lotsOfSmallsNoBigs2() throws Exception {
-//        int[] smallBigArray = solver.makeChocolate(75, 0, 70);
-//        assertEquals(70, smallBigArray[0]);
-//        assertEquals(0, smallBigArray[1]);
-
         solution = solver.makeChocolate(75, 0, 70);
         assertEquals(70, solution.smalls);
         assertEquals(0, solution.bigs);
@@ -231,10 +175,6 @@ public class ChocolateSolverTest {
 
     @Test
     public void exactNumberWorks2() throws Exception {
-//        int[] smallBigArray = solver.makeChocolate(5, 4, 25);
-//        assertEquals(5, smallBigArray[0]);
-//        assertEquals(4, smallBigArray[1]);
-
         solution = solver.makeChocolate(5, 4, 25);
         assertEquals(5, solution.smalls);
         assertEquals(4, solution.bigs);
@@ -243,10 +183,6 @@ public class ChocolateSolverTest {
 
     @Test
     public void notEnoughBigsAlmostEnoughSmall2() throws Exception {
-//        int[] smallBigArray = solver.makeChocolate(6, 7, 42);
-//        assertEquals(-1, smallBigArray[0]);
-//        assertEquals(-1, smallBigArray[1]);
-
         solution = solver.makeChocolate(6, 7, 42);
         assertEquals(-1, solution.smalls);
         assertEquals(-1, solution.bigs);
@@ -255,10 +191,6 @@ public class ChocolateSolverTest {
 
     @Test
     public void exampleTestFromSite12() throws Exception {
-//        int[] smallBigArray = solver.makeChocolate(4, 1, 9);
-//        assertEquals(4, smallBigArray[0]);
-//        assertEquals(1, smallBigArray[1]);
-
         solution = solver.makeChocolate(4, 1, 9);
         assertEquals(4, solution.smalls);
         assertEquals(1, solution.bigs);
@@ -267,10 +199,6 @@ public class ChocolateSolverTest {
 
     @Test
     public void exampleTestFromSite22() throws Exception {
-//        int[] smallBigArray = solver.makeChocolate(4, 1, 10);
-//        assertEquals(-1, smallBigArray[0]);
-//        assertEquals(-1, smallBigArray[1]);
-
         solution = solver.makeChocolate(4, 1, 10);
         assertEquals(-1, solution.smalls);
         assertEquals(-1, solution.bigs);
@@ -279,10 +207,6 @@ public class ChocolateSolverTest {
 
     @Test
     public void exampleTestFromSite32() throws Exception {
-//        int[] smallBigArray = solver.makeChocolate(4, 1, 7);
-//        assertEquals(2, smallBigArray[0]);
-//        assertEquals(1, smallBigArray[1]);
-
         solution = solver.makeChocolate(4, 1, 7);
         assertEquals(2, solution.smalls);
         assertEquals(1, solution.bigs);
