@@ -1,3 +1,38 @@
+body {
+    background-color: #E85B39;
+    color: white;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.yellow-background {
+    background-color: #FFC65C;
+    color: #8B4513;
+}
+
+.white-background {
+    background-color: white;
+    color: #8B4513;
+}
+
+.white-border {
+    border: white solid 5px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.red-border {
+    border: #E85B39 solid 5px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.long-div {
+    height = 800px;
+}
+
 .choc-big-bar {
     float: left;
     width: 50px;
@@ -17,7 +52,7 @@
     line-height: 20px;
     font-size: 20px;
     text-align: center;
-    background-color: orange;
+    background-color: #FFA09E;
     color: white;
     margin: 2px;
 }

@@ -18,46 +18,49 @@
     {{! the default angularjs delimeters - https://mustache.github.io/mustache.5.html for more info  }}
     {{=<% %>=}}
 
-    Welcome to {{factoryName}}!
+    <h2 class="center-text">Welcome to {{factoryName}}!</h2>
 
     <br/><br/>
-    How many big bars of chocolate do you have?
-    <input type="text" placeholder="Number of bigs" ng-model="inputNumBigs"/>
-    <br/>
-    How many small bars of chocolate do you have?
-    <input type="text" placeholder="Number of smalls" ng-model="inputNumSmalls"/>
-    <br/>
-    How much chocolate are you trying to make?
-    <input type="text" placeholder="Goal" ng-model="inputGoal"/>
-
+    <div class="yellow-background white-border">
+        How many big bars of chocolate do you have?
+        <input type="text" placeholder="Number of bigs" ng-model="inputNumBigs"/>
+        <br/>
+        How many small bars of chocolate do you have?
+        <input type="text" placeholder="Number of smalls" ng-model="inputNumSmalls"/>
+        <br/>
+        How much chocolate are you trying to make?
+        <input type="text" placeholder="Goal" ng-model="inputGoal"/>
+    </div>
     <br/>
 
     <input type="button" ng-click="getNumSmallsAndBigs(inputNumBigs, inputNumSmalls, inputGoal)" value="Make Chocolate!!"/>
     <br/><br/>
 
-    <h3>Your Inventory:</h3>
-        <div ng-repeat="chocIndex in makeArray(inputNumBigs)">
-            <div class="choc-big-bar">{{chocIndex + 1}}</div>
-        </div>
+    <div class="white-border white-background">
+        <h3>Your Inventory:</h3>
+            <div ng-repeat="chocIndex in makeArray(inputNumBigs)">
+                <div class="choc-big-bar">{{chocIndex + 1}}</div>
+            </div>
 
-        <div ng-repeat="chocIndex in makeArray(inputNumSmalls)">
-            <div class="choc-small-bar">{{chocIndex + 1}}</div>
-        </div>
-    <br/><br/><br/><br/><br/><br/>
+            <div ng-repeat="chocIndex in makeArray(inputNumSmalls)">
+                <div class="choc-small-bar">{{chocIndex + 1}}</div>
+            </div>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-    <span ng-if="mySolution.hasSolution">
-        <h3>You used {{mySolution.bigs}} bigs and {{mySolution.smalls}} smalls: </h3>
-        <div ng-repeat="chocIndex in makeArray(mySolution.bigs)">
-            <div class="choc-big-bar">{{chocIndex + 1}}</div>
-        </div>
+        <span ng-if="mySolution.hasSolution">
+            <h3>You used {{mySolution.bigs}} bigs and {{mySolution.smalls}} smalls: </h3>
+            <div ng-repeat="chocIndex in makeArray(mySolution.bigs)">
+                <div class="choc-big-bar">{{chocIndex + 1}}</div>
+            </div>
 
-        <div ng-repeat="chocIndex in makeArray(mySolution.smalls)">
-            <div class="choc-small-bar">{{chocIndex + 1}}</div>
-        </div>
-    </span>
+            <div ng-repeat="chocIndex in makeArray(mySolution.smalls)">
+                <div class="choc-small-bar">{{chocIndex + 1}}</div>
+            </div>
+        </span>
 
-    <span ng-if="showNoSolution">
-        Cannot make the goal amount from your inventory. :-((
-    </span>
+        <span ng-if="showNoSolution">
+            Cannot make the goal amount from your inventory. :-((
+        </span>
+    </div>
 </body>
 </html>
